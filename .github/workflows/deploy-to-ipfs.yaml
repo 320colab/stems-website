@@ -3,7 +3,7 @@ name: deploy to ipfs gateway
 on:
   push:
     branches:
-      - release
+      - main
 
 jobs:
   build:
