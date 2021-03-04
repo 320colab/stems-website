@@ -1,0 +1,23 @@
+{
+  "name": "stems-website",
+  "description": "Website for the STEMS music produciton competition.  Hosted at https://stems.320colab.com. Based on bootstrap 4.0.0-alpha.6.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "ipfs-deploy": "^8.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-site": "ipfs-deploy public -p pinata -d cloudflare -O -C"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/320colab/stems-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/320colab/stems-website/issues"
+  },
+  "homepage": "https://github.com/320colab/stems-website#readme"
+}
