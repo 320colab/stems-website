@@ -1,7 +1,7 @@
 # STEMS Website
 
 Website for the STEMS music produciton competition. 
-Hosted at https://stems.320colab.com.
+Hosted at https://stems.320colab.com and http://stems.320colab.space/ (through IPFS).
 Based on bootstrap 4.0.0-alpha.6.
 
 
