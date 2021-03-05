@@ -8,13 +8,23 @@ body {
     overflow-y: scroll;
 }
 
-.row {
+section {
     scroll-snap-align: start;
 }
 
-.carousel-item {
-    width: 70%;
+.carousel-container {
+    padding: 0 10vw;
     margin: 0 auto;
+}
+
+.carousel-control-prev {
+    left: -10vw;
+    width: 10vw;
+}
+
+.carousel-control-next {
+    right: -10vw;
+    width: 10vw;
 }
 
 .carousel-indicators {
