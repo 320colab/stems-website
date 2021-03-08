@@ -1,6 +1,8 @@
 body {
     background-color: black;
     overflow: hidden;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #background-video {
@@ -9,17 +11,102 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -20;
+
 }
 
 .container-fluid {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    z-index: 0;
 }
 
 section {
     scroll-snap-align: start;
 }
+
+.logo-container {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    z-index: 10;
+    background-image: url("../logo_w.png");
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+}
+
+
+/* CONTENT STUFF */
+.jumbotrono {
+    margin: 0 125px;
+}
+
+.jumbotrono h2 {
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.jumbotrono h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.jumbotrono p {
+    font-weight: normal;
+    font-size: 1em;
+    color: white;
+}
+
+.jumbotrono .form-group {
+    width: 50%;
+}
+
+.jumbotrono .form-group label {
+    font-weight: normal;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 0;
+}
+
+.jumbotrono .form-group input#name, .jumbotrono .form-group input#email {
+    font-weight: normal;
+    font-size: 1em;
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: solid 1px white;
+    border-radius: 0px;
+}
+
+.jumbotrono .form-group.submit-container {
+    text-align: right;
+}
+
+.jumbotrono .form-group.submit-container input#submit {
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.jumbotrono .form-group.submit-container span.submit-arrow {
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
 
 /* CAROUSEL STUFF */
 .carousel-container {
@@ -42,11 +129,16 @@ section {
     margin-top: 20px;
 }
 
+.carousel-item.active > div.row {
+    margin: 0;
+}
+
+
 /* SIDEBAR STUFF */
 div.sidebar-toggler {
     position: fixed;
-    left: 0;
-    top: 0;
+    right: 30px;
+    top: 30px;
     z-index: 100;
     margin: 5px;
 }
@@ -75,6 +167,7 @@ div.sidebar-toggler {
     padding: 0;
     transition: right 1s ease;
     background-color: blue;
+    z-index: 200;
 }
 
 .sidebar-overlay.collapse {
@@ -83,6 +176,10 @@ div.sidebar-toggler {
 
 .sidebar-overlay.collapse.show {
     right: 0;
+}
+
+.sidebar-overlay.collapsing {
+    transition: right 1s ease;
 }
 
 ul.navbar-nav {

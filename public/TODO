@@ -1,7 +1,12 @@
 TODO
 
-- [ ] fix carousel on mobile
-- [ ] overlay sidebar menu
-- [x] center text elements
+- [ ] OVERLAY SIDEBAR MENU
+    - [ ] fix transition delay while .collapsing
+    - [ ] 
+
 - [ ] design (colors, fonts, etc)
+- [ ] fix carousel right control
 - [ ] add content 
+- [ ] signup form
+    - [ ] mandatory form fields
+    - [ ] trigger submit from href
