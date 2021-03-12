@@ -92,7 +92,7 @@ h2 {
     text-decoration: 0;
 }
 
-.jumbotrono .form-group.submit-container div.submit-text {
+div.submit-text {
     font-size: 0.5em;
     font-weight: bold;
     text-transform: uppercase;
@@ -103,7 +103,7 @@ h2 {
     display: inline-block;
 }
 
-.jumbotrono .form-group.submit-container div.submit-arrow {
+div.submit-arrow {
     display: inline-block;
     color: white;
     padding: 0;
@@ -114,7 +114,7 @@ h2 {
     line-height: 1.8em;
 }
 
-.jumbotrono .form-group.submit-container div.submit-arrow.rounded-circle:hover {
+div.submit-arrow:hover {
     border-color: black !important;
     background-color: white;
     color: black !important;
@@ -261,7 +261,14 @@ li.nav-item > a.nav-link {
 
 li.nav-item > a.nav-link:hover {
     font-weight: normal;
-    
+}
+
+li.nav-back {
+    text-align: right;
+}
+
+li.nav-back a {
+    text-decoration: none;
 }
 
 /* RULES STUFF */
