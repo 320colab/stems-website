@@ -1,12 +1,17 @@
 TODO
 
 - [ ] OVERLAY SIDEBAR MENU
-    - [ ] fix transition delay while .collapsing
-    - [ ] 
-
-- [ ] design (colors, fonts, etc)
-- [ ] fix carousel right control
-- [ ] add content 
-- [ ] signup form
-    - [ ] mandatory form fields
-    - [ ] trigger submit from href
+    - [ ] styling
+    - [ ] "close" button
+- [ ] SIGNUP FORM
+    - [ ] form validation
+- [ ] carousel
+    - [ ] styling of control and navigator
+    - [ ] images from artists
+- [ ] add content
+  - [ ] copy for normal pages
+  - [ ] extendable div for rules
+  - [ ] governance
+- [ ] footer
+- [ ] background animation
+- [ ] test (especially on mobile!)
