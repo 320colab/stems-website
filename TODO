@@ -1,0 +1,11 @@
+TODO
+
+- [ ] OVERLAY SIDEBAR MENU
+    - [ ] styling
+    - [ ] consider flipping the menu on the left
+- [ ] content
+  - [ ] extendable div for rules
+  - [ ] footer
+- [ ] background animation
+- [ ] test (especially on mobile!)
+- [ ] adjust scroll snap sensitivity
