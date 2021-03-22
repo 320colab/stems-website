@@ -5,6 +5,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body>header {
+    margin: 0 auto 2rem auto;
+    padding: 2rem 0;
+}
+
 #background-video {
     position: fixed;
     right: 0;
@@ -26,28 +31,34 @@ section {
     scroll-snap-align: start;
 }
 
-.logo-container {
+
+.logo-placeholder {
     position: fixed;
-    left: 30px;
-    top: 30px;
     z-index: 300;
-    background-image: url("../logo.svg");
     background-size: contain;
-    height: 80px;
-    width: 80px;
+    margin: 0 1.5em;
+    height: 60px;
+    width: 60px;
 }
 
 
 /* CONTENT STUFF */
 .jumbotrono {
-    margin: 0 125px;
+    margin: 0 auto 1.5em auto;
+    max-width: 44rem;
+}
+
+.landing {
+    position: absolute;
+    left: 15%;
 }
 
 h2 {
-    font-size: 0.5em;
+    font-size: 0.8em;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
+    margin: 0 auto 0.5em auto;
 }
 
 .jumbotrono h1 {
@@ -60,10 +71,12 @@ h2 {
     font-weight: normal;
     font-size: 1em;
     color: white;
+    line-height: 1.3;
+    margin: 0 auto 1.3em auto;
 }
 
 .jumbotrono .form-group {
-    width: 50%;
+    width: 100%;
 }
 
 .jumbotrono .form-group label {
@@ -204,15 +217,11 @@ p.artist-round {
 }
 
 
-
-
 /* SIDEBAR STUFF */
 div.sidebar-toggler {
-    position: fixed;
-    right: 30px;
-    top: 30px;
+    text-align: right;
     z-index: 100;
-    margin: 5px;
+    margin: 0 1.5em;
 }
 
 button.sidebar-toggler:focus {
@@ -261,7 +270,7 @@ button.sidebar-toggler:focus {
 
 ul.navbar-nav {
     height: 100%;
-    padding: 20vh 0;
+    padding: 30vh 0;
 }
 
 li.nav-item {
@@ -301,7 +310,7 @@ button.nav-back {
     display: flex;
     justify-content: space-between;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1.5em auto;
 }
 
 .rules-container .rules-col {
@@ -324,8 +333,18 @@ span.rule-text {
     line-height: 1em;
 }
 
+span.kerning {
+    letter-spacing: 0.1em;
+}
 
-
+span.underline {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: red;
+    letter-spacing: 0.1em;
+}
 
 /* MOBILE FIXES */
 @media only screen and (max-width: 600px) {
