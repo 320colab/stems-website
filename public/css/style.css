@@ -58,6 +58,10 @@ section {
     font-size: 1em;
 }
 
+#about p {
+    margin-bottom: 0.5em;
+}
+
 
 /* CONTENT STUFF */
 .jumbotrono {
