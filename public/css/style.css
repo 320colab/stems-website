@@ -27,7 +27,6 @@ section {
     scroll-snap-align: start;
 }
 
-
 .logo-placeholder {
     position: fixed;
     z-index: 300;
@@ -35,6 +34,14 @@ section {
     margin: 1.5em;
     height: 50px;
     width: 50px;
+}
+
+.logo-placeholder img {
+    transition: transform 2s ease-in-out;
+}
+
+.logo-placeholder img:hover {
+    transform: rotate(180deg);
 }
 
 .action-link {
