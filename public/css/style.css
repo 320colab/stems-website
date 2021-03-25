@@ -254,7 +254,7 @@ button.sidebar-toggler:focus {
 }
 
 .sidebar-overlay.collapse {
-    left: 200vw;
+    left: 250vw;
 }
 
 .sidebar-overlay.collapse.show {
