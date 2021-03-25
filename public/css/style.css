@@ -5,11 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body>header {
-    margin: 0 auto 2rem auto;
-    padding: 2rem 0;
-}
-
 #background-video {
     position: fixed;
     right: 0;
@@ -24,6 +19,7 @@ body>header {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 0;
 }
 
@@ -41,11 +37,32 @@ section {
     width: 50px;
 }
 
+.action-link {
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 15px;
+}
+
+.action-link.span {
+}
+
+.action-link:hover {
+    color: white;
+}
+
+.media-body h5 {
+    color: white;
+    font-weight: normal;
+    font-size: 1em;
+}
+
 
 /* CONTENT STUFF */
 .jumbotrono {
-    margin: 0 auto 1.5em auto;
-    max-width: 44rem;
+    margin: 0 6em 1.5em 6em;
+    /* max-width: 44rem; */
 }
 
 .jumbotrono h1 {
@@ -59,7 +76,7 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-    margin: 0 auto 0.5em auto;
+    margin: 7em auto 0.5em auto;
 }
 
 .jumbotrono p {
@@ -71,7 +88,7 @@ section {
 }
 
 .jumbotrono .form-group {
-    width: 100%;
+    width: 40%;
 }
 
 .jumbotrono .form-group label {
@@ -302,7 +319,7 @@ button.nav-back {
 /* RULES STUFF */
 .jumbotrono.rules-jumbotrono h2 {
     width: 600px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .rules-container {
@@ -349,7 +366,7 @@ span.underline {
 @media only screen and (max-width: 600px) {
 
     .jumbotrono {
-      margin: 0 10px;
+      margin: 0 20px;
     }
 
     .jumbotrono .form-group {
@@ -362,8 +379,13 @@ span.underline {
 
     .jumbotrono h2 {
         font-size: 1.1rem;
+        margin-top: 5em;
     }
 
+    .media-body h5 {
+    font-size: 1.1rem;
+    }
+    
     .jumbotrono p {
     font-size: 1.1rem;
     line-height: 1.2rem;
@@ -371,14 +393,27 @@ span.underline {
     }
 
     .jumbotrono .rule-pic {
-        max-height: 80px;
-        max-width: 80px;
+        max-height: 60px;
+        max-width: 60px;
+    }
+
+    .jumbotrono .rules-container {
+        margin-top: 10px;
     }
 
     .jumbotrono span.rule-text {
         font-size: 0.6em;
         line-height: 1.1em;
     }
+
+    .jumbotrono .rule-block {
+        padding-bottom: 10px;
+    }
+
+    .carousel-container {
+        padding: 0 15px;
+    }
+
   }
 
 
