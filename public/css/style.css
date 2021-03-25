@@ -48,23 +48,18 @@ section {
     max-width: 44rem;
 }
 
-.landing {
-    position: absolute;
-    left: 15%;
+.jumbotrono h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
 }
 
-h2 {
+.jumbotrono h2 {
     font-size: 0.8em;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     margin: 0 auto 0.5em auto;
-}
-
-.jumbotrono h1 {
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
 }
 
 .jumbotrono p {
@@ -322,6 +317,7 @@ button.nav-back {
     text-align: center;
 }
 
+
 span.rule-text {
     margin: 10px 0;
     display: block;
@@ -348,6 +344,7 @@ span.underline {
 
 /* MOBILE FIXES */
 @media only screen and (max-width: 600px) {
+
     .jumbotrono {
       margin: 0 10px;
     }
@@ -355,4 +352,36 @@ span.underline {
     .jumbotrono .form-group {
         width: 100%;
     }
+
+    .jumbotrono h1 {
+        font-size: 2rem;
+    }
+
+    .jumbotrono h2 {
+        font-size: 1.1rem;
+    }
+
+    .jumbotrono p {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    max-width: 20em;
+    }
+
+    .jumbotrono .rule-pic {
+        max-height: 80px;
+        max-width: 80px;
+    }
+
+    .jumbotrono span.rule-text {
+        font-size: 0.6em;
+        line-height: 1.1em;
+    }
   }
+
+
+@media (min-width: 1200px) {  
+  .landing {
+        position: absolute;
+        left: 15%;
+    }  
+}
