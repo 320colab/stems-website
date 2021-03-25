@@ -36,7 +36,7 @@ section {
     position: fixed;
     z-index: 300;
     background-size: contain;
-    margin: 0 1.5em;
+    margin: 1.5em;
     height: 60px;
     width: 60px;
 }
@@ -214,9 +214,11 @@ p.artist-round {
 
 /* SIDEBAR STUFF */
 div.sidebar-toggler {
+    position: fixed;
+    right: 0;
     text-align: right;
     z-index: 100;
-    margin: 0 1.5em;
+    margin: 1.5em;
 }
 
 button.sidebar-toggler:focus {
