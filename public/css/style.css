@@ -286,6 +286,7 @@ li.nav-item > a.nav-link:hover {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     color: black !important;
+    /* font-size: 2.1em; */
 }
 
 button.nav-back {
@@ -323,10 +324,9 @@ span.rule-text {
     display: block;
     color: white;
     text-transform: uppercase;
-    font-size: .75em;
-    font-weight: bold;
+    font-size: .6em;
     text-align: center;
-    line-height: 1em;
+    line-height: 1.1em;
 }
 
 span.kerning {
