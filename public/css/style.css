@@ -78,6 +78,14 @@ section {
     margin-bottom: 0.3em;
 }
 
+a, a:hover {
+    color: white;
+}
+
+#about a, #about a:hover {
+    text-decoration: underline;
+}
+
 
 /* CONTENT STUFF */
 .jumbotrono {
@@ -423,10 +431,6 @@ footer span {
 
 footer span:last-child {
     border-right: none;
-}
-
-.footer span a {
-    color: white;
 }
 
 
