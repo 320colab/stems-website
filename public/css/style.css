@@ -27,6 +27,7 @@ body {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     overflow-x: hidden;
     z-index: 0;
 }
@@ -74,7 +75,7 @@ section {
 }
 
 #about p {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 
@@ -220,13 +221,16 @@ span.ask {
 img.artist-pic {
     width: 100%;
     box-shadow: 5px 5px 0 -1px black, 5px 5px 0 white;
-    transition: transform .5s, border .5s ;
+    transition: transform .5s;
+}
 
+img.artist-empty {
+    width: 100%;
 }
 
 img.artist-pic:hover {
-    border: 1.05px solid white;
-    transform: scale(1.05);
+    /* border: 1.05px solid white; */
+    transform: scale(1.1);
 }
 
 .artist-info {
@@ -309,13 +313,11 @@ button.sidebar-toggler:focus {
 
 ul.navbar-nav {
     height: 100%;
-    padding: 20vh 0;
+    justify-content: center;
 }
 
 li.nav-item {
-    display: flex;
-    align-items: center;
-    flex: 1;
+    display: block;
     margin: 0 auto;
 }
 
@@ -324,6 +326,7 @@ li.nav-item > a.nav-link {
     font-weight: bold;
     font-size: 2em;
     padding: 0;
+    line-height: 1.1em;
 }
 
 li.nav-item > a.nav-link:hover {
@@ -388,7 +391,7 @@ span.underline {
 }
 
 /* CONNECT STUFF */
-#connect h2 {
+#connect p {
     text-align: center;
     margin-bottom: 2px;
 }
@@ -428,7 +431,6 @@ footer span:last-child {
 
 /* MOBILE FIXES */
 @media only screen and (max-width: 600px) {
-
     .jumbotrono {
       margin: 0 20px;
     }
@@ -499,7 +501,15 @@ footer span:last-child {
         color: white !important;
     }
 
-  }
+    .sidebar-overlay {
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 600px) and (max-height: 400px) {
+    .h-100 {
+        height: auto;
+    }
+}
 
 
 @media (min-width: 1200px) {  
