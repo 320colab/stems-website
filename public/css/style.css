@@ -209,6 +209,7 @@ span.ask {
 
 .carousel-item.active > div.row {
     margin: 0;
+    padding-top: 5px;
 }
 
 /* ARTIST CARDS */
@@ -218,7 +219,14 @@ span.ask {
 
 img.artist-pic {
     width: 100%;
-    box-shadow: 7px 7px 0 -1px black, 7px 7px 0 white;
+    box-shadow: 5px 5px 0 -1px black, 5px 5px 0 white;
+    transition: transform .5s, border .5s ;
+
+}
+
+img.artist-pic:hover {
+    border: 1.05px solid white;
+    transform: scale(1.05);
 }
 
 .artist-info {
@@ -230,8 +238,7 @@ img.artist-pic {
 }
 
 h5.artist-name {
-    padding: 10px;
-    padding-bottom: 0;
+    padding-top: 10px;
     background: black;
     text-align: center;
     margin: 0;
@@ -241,7 +248,7 @@ h5.artist-name {
 p.artist-round {
     background: black;
     margin: 0;
-    font-size: .5em;
+    font-size: .5em !important;
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -381,6 +388,45 @@ span.underline {
     letter-spacing: 0.1em;
 }
 
+/* CONNECT STUFF */
+#connect h2 {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+#connect .some-links {
+    text-align: center;
+}
+
+#connect .some-links img {
+    height: 25px;
+    margin: 3px;
+}
+
+footer {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    font-size: 0;
+}
+
+footer span {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0 10px;
+    color: white;
+    border-right: 1px solid white;
+}
+
+footer span:last-child {
+    border-right: none;
+}
+
+.footer span a {
+    color: white;
+}
+
+
 /* MOBILE FIXES */
 @media only screen and (max-width: 600px) {
 
@@ -431,6 +477,27 @@ span.underline {
 
     .carousel-container {
         padding: 0 15px;
+    }
+
+    .carousel-control-prev .submit-arrow, 
+    .carousel-control-next .submit-arrow {
+        border: none;
+        position: relative;
+        bottom: 30px;
+    }
+    
+    .carousel-control-prev .submit-arrow {
+        left: 10px;
+    }
+
+    .carousel-control-next .submit-arrow {
+        right: 10px;
+    }
+
+    .carousel-control-prev .submit-arrow:hover, 
+    .carousel-control-next .submit-arrow:hover {
+        background-color: transparent !important;
+        color: white !important;
     }
 
   }
