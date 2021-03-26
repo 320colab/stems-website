@@ -394,6 +394,7 @@ span.underline {
 #connect p {
     text-align: center;
     margin-bottom: 2px;
+    font-size: 1.2em;
 }
 
 #connect .some-links {
@@ -401,8 +402,8 @@ span.underline {
 }
 
 #connect .some-links img {
-    height: 25px;
-    margin: 3px;
+    height: 30px;
+    margin: 5px;
 }
 
 footer {
