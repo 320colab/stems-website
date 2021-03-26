@@ -18,7 +18,7 @@ function setup() {
     myWidth = windowWidth;
     myHeight = windowHeight;
     myCanvas = createCanvas(myWidth, myHeight, WEBGL);
-    myCanvas.parent('background-anim');
+    myCanvas.parent('background-anim2');
     smooth(1);
 
     colorMode(RGB, 256);
@@ -61,8 +61,8 @@ function draw() {
 
     translate(-width / 4, -height / 4);
     for (var y = 0; y < rows - 1; y++) {
-        stroke(grand[0][y]);
-        strokeWeight(grand[0][y] * 0.01);
+        stroke(255);
+        strokeWeight(min(grand[1][y], 50) * 0.005);
         beginShape(LINES);
         for (var x = 0; x < cols; x++) {
             vertex(x * scl, y * scl, grand[x][y]);
@@ -70,4 +70,10 @@ function draw() {
         }
         endShape();
     }
+}
+
+function windowResized() {
+    myWidth = windowWidth;
+    myHeight = windowHeight;
+    resizeCanvas(myWidth, myHeight);
 }
